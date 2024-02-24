@@ -1,5 +1,5 @@
 
-def anguloPonteiros(horario: str) -> None:
+def angulo_ponteiros(horario: str) -> None:
     hora, minutos = horario.split(':')
     hora, minutos = int(hora), int(minutos)
 
@@ -29,4 +29,4 @@ if __name__ == '__main__':
         if len(horario) != 5:
             print('Input inválido')
         else:
-            anguloPonteiros(horario)
+            angulo_ponteiros(horario)
