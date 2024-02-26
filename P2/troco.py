@@ -17,7 +17,7 @@ def calculadora_troco(valor: float) -> None:
 
 
 if __name__ == '__main__':
-    entrada = input()
+    entrada = input('Valor: ')
 
     try:
         valor = float(entrada)

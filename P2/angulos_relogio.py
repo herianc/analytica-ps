@@ -1,7 +1,10 @@
 
 def angulo_ponteiros(horario: str) -> None:
-    hora, minutos = horario.split(':')
-    hora, minutos = int(hora), int(minutos)
+    try:
+        hora, minutos = horario.split(':')
+        hora, minutos = int(hora), int(minutos)
+    except ValueError:
+        print('Input Inválido!')
 
     # Verificando se os valores estão dentro do alcance
     if not hora in range(0, 25) or not minutos in range(0, 60):
@@ -21,7 +24,7 @@ def angulo_ponteiros(horario: str) -> None:
 
 if __name__ == '__main__':
     while True:
-        horario = input()
+        horario = input('Horário: ')
 
         if horario.lower() == 'f':
             print('Fim...')

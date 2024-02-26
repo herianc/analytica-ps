@@ -2,7 +2,7 @@ def frequencia_numeros() -> None:
     numeros = []
 
     while True:
-        entrada = input()
+        entrada = input('Número: ')
         if entrada == 'f':
             break
         elif entrada.isdigit():  # Verificando se é um dígito
